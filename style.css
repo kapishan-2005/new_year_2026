@@ -1,0 +1,95 @@
+.font-pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+/* Glass */
+.glass {
+  background: rgba(255,255,255,0.12);
+  backdrop-filter: blur(12px);
+  border-radius: 16px;
+  padding: 20px 30px;
+}
+#wishTitle {
+  line-height: 1.1;
+}
+
+/* Sparkle text */
+.sparkle {
+  background: linear-gradient(90deg, #fff, #ffd700, #ff69b4, #fff);
+  background-size: 300%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: sparkleMove 4s linear infinite;
+}
+
+@keyframes sparkleMove {
+  0% { background-position: 0%; }
+  100% { background-position: 300%; }
+}
+
+/* Fade */
+.opacity-0 {
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+.show {
+ opacity: 1 !important;
+  transition: opacity 1.5s ease !important;}
+
+/* Glass Input */
+.glass-input {
+  background: rgba(255,255,255,0.15);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255,255,255,0.3);
+  padding: 12px 20px;
+  border-radius: 12px;
+  color: white;
+  outline: none;
+  text-align: center;
+  font-size: 18px;
+}
+
+/* Start Button */
+.start-btn {
+  background: linear-gradient(45deg, #ff0080, #ffd700);
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.start-btn:hover {
+  transform: scale(1.08);
+  box-shadow: 0 0 20px #ffd700;
+}
+
+/* Snow */
+#snowContainer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 2;
+}
+.snowflake {
+  position: absolute;
+  color: white;
+  opacity: 0.8;
+}
+
+/* Fireworks */
+#fireworks {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Glow */
+.bg-glow {
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(circle at top, #ff0080, transparent 40%),
+    radial-gradient(circle at bottom, #00ffff, transparent 40%);
+  opacity: 0.25;
+  z-index: 0;
+}

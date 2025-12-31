@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Happy New Year 2026</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-black text-white overflow-hidden relative">
+
+  <div class="bg-glow"></div>
+
+  <div id="snowContainer"></div>
+  <canvas id="fireworks"></canvas>
+
+  <!-- NAME PAGE -->
+  <div id="namePage" class="h-screen flex flex-col items-center justify-center text-center z-10 relative">
+    <h1 class="text-4xl mb-6 font-pacifico">Enter Your Name</h1>
+
+    <input id="nameInput" type="text" placeholder="Your Name" class="glass-input mb-6">
+
+    <button onclick="startWish()" class="start-btn">
+      ✨ Continue ✨
+    </button>
+  </div>
+
+  <!-- COUNTDOWN -->
+  <div id="countdownPage" class="hidden h-screen flex items-center justify-center z-10 relative">
+    <h1 id="countText" class="text-8xl font-bold"></h1>
+  </div>
+
+  <!-- WISH PAGE -->
+  <div id="wishPage" class="hidden h-screen flex flex-col items-center justify-center text-center z-10 relative">
+    <h1 id="wishTitle" class="text-6xl md:text-8xl glass sparkle font-pacifico opacity-0">
+      Happy New Year 2026
+    </h1>
+
+    <p id="wishMsg" class="text-xl mt-4 opacity-0"></p>
+
+    <p id="wisher" class="mt-4 text-yellow-400 opacity-0">
+    💛 Wished by Kapishan 💛
+  </p>
+
+    <button onclick="shareWhatsApp()" class="mt-8 bg-green-600 hover:bg-green-700 px-6 py-3 rounded-lg font-bold">
+      Share on WhatsApp
+    </button>
+  </div>
+
+  <!-- Background Music -->
+  <audio id="bgMusic" loop>
+    <source src="music.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
