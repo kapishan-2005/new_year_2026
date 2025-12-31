@@ -44,7 +44,14 @@ function showWish() {
   const msg = document.getElementById("wishMsg");
   const wisher = document.getElementById("wisher");
 
-  msg.innerText = `🎉 Happy New Year 2026, ${userName}! 🎉`;
+  msg.innerText = `🎉 A New Year’s Spark
+A brand new year, a page so bright,
+Filled with dreams and morning light.
+Leave behind what made you blue,
+Embrace the joy that’s fresh and new.
+
+May laughter, love, and hope appear,
+Wishing you a Happy New Year!, ${userName}! 🎉`;
 
   setTimeout(() => title.classList.add("show"), 300);
   setTimeout(() => msg.classList.add("show"), 1100);
